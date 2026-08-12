@@ -1,0 +1,57 @@
+<svg width="1280" height="320" viewBox="0 0 1280 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4FAF9"/>
+      <stop offset="55%" stop-color="#EAF6F3"/>
+      <stop offset="100%" stop-color="#E2F2E9"/>
+    </linearGradient>
+    <linearGradient id="accentGradL" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F9D8C"/>
+      <stop offset="100%" stop-color="#E0A400"/>
+    </linearGradient>
+    <radialGradient id="nodeGlowL" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0F9D8C" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0F9D8C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="320" fill="url(#bgGradL)"/>
+
+  <g stroke="#B9DED6" stroke-width="1.4" opacity="0.9">
+    <line x1="880" y1="70" x2="990" y2="110"/>
+    <line x1="990" y1="110" x2="1080" y2="70"/>
+    <line x1="990" y1="110" x2="960" y2="200"/>
+    <line x1="960" y1="200" x2="1070" y2="230"/>
+    <line x1="960" y1="200" x2="860" y2="240"/>
+    <line x1="1080" y1="70" x2="1180" y2="120"/>
+    <line x1="1180" y1="120" x2="1150" y2="220"/>
+    <line x1="1150" y1="220" x2="1070" y2="230"/>
+    <line x1="860" y1="240" x2="900" y2="150"/>
+    <line x1="900" y1="150" x2="880" y2="70"/>
+  </g>
+  <g fill="#0F9D8C">
+    <circle cx="880" cy="70" r="4"/>
+    <circle cx="990" cy="110" r="5"/>
+    <circle cx="1080" cy="70" r="4"/>
+    <circle cx="960" cy="200" r="5"/>
+    <circle cx="1070" cy="230" r="4"/>
+    <circle cx="860" cy="240" r="4"/>
+    <circle cx="1180" cy="120" r="4"/>
+    <circle cx="1150" cy="220" r="4"/>
+    <circle cx="900" cy="150" r="3.5"/>
+  </g>
+  <circle cx="990" cy="110" r="10" fill="url(#nodeGlowL)"/>
+
+  <rect x="80" y="118" width="64" height="6" rx="3" fill="url(#accentGradL)"/>
+
+  <text x="80" y="180" font-family="Verdana, Geneva, sans-serif" font-size="54" font-weight="700" fill="#0B2540">
+    ZarishHealth
+  </text>
+  <text x="80" y="218" font-family="Verdana, Geneva, sans-serif" font-size="20" fill="#0F9D8C">
+    By ZarishSphere
+  </text>
+
+  <text x="80" y="258" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#3E5A5C">
+    Sovereign Digital Public Infrastructure for Global Health
+  </text>
+</svg>
