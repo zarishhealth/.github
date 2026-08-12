@@ -3,10 +3,10 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/zarishhealth-banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/zarishshealth-banner-light.svg">
-  <img alt="ZarishHealth" src="./assets/zarishhealth-banner-light.svg" width="100%">
-</picture>
+  <img alt="ZarishHealth Ecosyste" src="./assets/zarishhealth-banner-light.svg" width="100%">
+</picture> 
 
-<br><br>
+<br><br> 
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Verdana&size=20&duration=3000&pause=1000&color=0F9D8C&center=true&vCenter=true&width=700&lines=Zero-Code+Wizerd+Setup;Modular+Plug+and+Play;Offline-First+Edge+Resilience%2C+Deployed+Locally;Zero-Cost%2C+Zero-Coder%2C+Zero-Barrier;Built+for+Global+Health+%E2%80%94+Designed+for+the+Last+Mile)](https://health.zarishsphere.com)
 
