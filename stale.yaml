@@ -1,0 +1,51 @@
+# Stale issue and PR management
+# Uses actions/stale v9
+
+name: Mark and close stale issues and PRs
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'  # Every Monday at 06:00 UTC
+  workflow_dispatch:
+
+jobs:
+  stale:
+    runs-on: ubuntu-24.04
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/stale@v9
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+          # Issues
+          days-before-issue-stale: 60
+          days-before-issue-close: 14
+          stale-issue-label: 'stale'
+          stale-issue-message: >
+            This issue has been inactive for 60 days. I am marking it as stale.
+            If it is still relevant, please add a comment explaining why and I will
+            remove the stale label. If nothing happens in 14 days, this issue will close.
+          close-issue-message: >
+            This issue was closed because it has been inactive for 74 days.
+            If the problem persists, please open a new issue with updated information.
+
+          # Pull Requests
+          days-before-pr-stale: 30
+          days-before-pr-close: 10
+          stale-pr-label: 'stale'
+          stale-pr-message: >
+            This pull request has been inactive for 30 days. I am marking it as stale.
+            If you are still working on this, please add a comment or push a new commit.
+            If nothing happens in 10 days, this PR will be closed.
+          close-pr-message: >
+            This PR was closed due to inactivity. If you want to continue this work,
+            please reopen the PR and push an update.
+
+          # Never mark these as stale
+          exempt-issue-labels: 'pinned,security,in-progress,blocked,RFC,clinical-content,deployment'
+          exempt-pr-labels: 'pinned,security,in-progress,blocked'
+
+          # Never close issues in these repos automatically
+          exempt-all-milestones: true

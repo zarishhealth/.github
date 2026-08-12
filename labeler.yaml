@@ -1,0 +1,95 @@
+# Auto-label PRs based on changed files
+# Uses github/labeler action v5
+
+fhir-engine:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'cmd/**'
+      - 'internal/fhir/**'
+      - 'pkg/fhir*/**'
+      - '**/fhir_*.go'
+      - '**/fhir-*.go'
+
+backend:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'cmd/**'
+      - 'internal/**'
+      - '*.go'
+      - 'go.mod'
+      - 'go.sum'
+
+frontend:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.tsx'
+      - '**/*.ts'
+      - 'packages/**'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+
+mobile:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'lib/**'
+      - '**/*.dart'
+      - 'pubspec.yaml'
+      - 'android/**'
+      - 'ios/**'
+
+infrastructure:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.tf'
+      - '**/*.tfvars'
+      - 'deployments/**'
+      - '**/helm/**'
+      - 'docker-compose*.yaml'
+      - 'Dockerfile'
+
+ci-cd:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '.github/workflows/**'
+      - '.github/actions/**'
+
+documentation:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.md'
+      - 'docs/**'
+      - 'profile/**'
+
+clinical-content:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'configuration/**'
+      - 'fhir/**'
+      - '**/*.json'
+      - 'concepts/**'
+      - 'jsonforms/**'
+
+security:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'internal/infrastructure/auth/**'
+      - 'internal/infrastructure/crypto/**'
+      - '**/auth/**'
+      - '**/security/**'
+      - 'SECURITY.md'
+
+translations:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/translations/**'
+      - '**/*.arb'
+      - '**/i18n/**'
+      - '**/l10n/**'
+
+dependencies:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'go.sum'
+      - 'pnpm-lock.yaml'
+      - 'pubspec.lock'
+      - 'package-lock.json'
