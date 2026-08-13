@@ -24,7 +24,7 @@ Public disclosure before a patch is available puts live health systems at risk.
 
 ### How to Report
 
-**Email:** platform@zarishsphere.com
+**Email:** zarishhealth@gmail.com
 **Subject line:** `[SECURITY] Brief description`
 **Response time:** I will acknowledge within 48 hours
 
