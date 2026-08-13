@@ -19,7 +19,7 @@ Anyone. Code is not required. The most impactful contributions are often documen
 - **Write or improve documentation** — every repository has a `docs/` folder
 - **Design a clinical form** — use [forms.zarishsphere.com](https://forms.zarishsphere.com) — no coding needed
 - **Translate the interface** — join the translation project at [zs-contrib-translations](https://github.com/zarishhealth/zs-contrib-translations)
-- **Share a case study** — document how a health facility or country could use ZarishSphere
+- **Share a case study** — document how a health facility or country could use ZarishHealth
 
 ### With Code
 
@@ -114,7 +114,7 @@ All clinical content (forms, concepts, order sets) must:
 
 ## Code of Conduct
 
-This project follows the [Contributor Covenant 2.1](CODE_OF_CONDUCT.md). All contributors agree to uphold its standards. Violations are reported to [platform@zarishsphere.com](mailto:platform@zarishsphere.com).
+This project follows the [Contributor Covenant 2.1](CODE_OF_CONDUCT.md). All contributors agree to uphold its standards. Violations are reported to [zarishhealth@gmail.com](mailto:zarishhealth@gmail.com).
 
 ---
 
@@ -132,5 +132,5 @@ When you open your first PR, our welcome bot will greet you and connect you to r
 ## Questions
 
 - **GitHub Discussions:** https://github.com/orgs/zarishhealth/discussions
-- **Email:** platform@zarishsphere.com
+- **Email:** zarishhealth@gmail.com
 - **Documentation:** https://docs.zarishsphere.com
