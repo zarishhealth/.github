@@ -1,0 +1,133 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "name": "ZarishHealth",
+  "version": "1.0.0",
+  "color": {
+    "brand": {
+      "primary": {
+        "value": "#017CF5",
+        "type": "color",
+        "description": "Zarish Blue - primary brand colour"
+      },
+      "primaryHover": {
+        "value": "#0163C4",
+        "type": "color"
+      },
+      "primaryActive": {
+        "value": "#014A93",
+        "type": "color"
+      },
+      "accent": {
+        "value": "#10B981",
+        "type": "color",
+        "description": "Vital Green - the cross / positive state"
+      },
+      "accentAlt": {
+        "value": "#06B6D4",
+        "type": "color",
+        "description": "Care Teal - data & connectivity"
+      },
+      "ink": {
+        "value": "#02091C",
+        "type": "color",
+        "description": "Deep Navy - dark surfaces & text"
+      },
+      "surface": {
+        "value": "#F5F7FA",
+        "type": "color"
+      },
+      "onBrand": {
+        "value": "#FFFFFF",
+        "type": "color"
+      }
+    },
+    "scale": {
+      "blue": {
+        "50": "#E8F2FE",
+        "100": "#CFE5FD",
+        "200": "#9ECBFB",
+        "300": "#6EB1F9",
+        "400": "#3D97F7",
+        "500": "#017CF5",
+        "600": "#0163C4",
+        "700": "#014A93",
+        "800": "#003162",
+        "900": "#001931"
+      },
+      "navy": {
+        "600": "#1E3A63",
+        "700": "#123055",
+        "800": "#0A1A34",
+        "900": "#02091C"
+      },
+      "green": {
+        "400": "#34D399",
+        "500": "#10B981",
+        "600": "#059669"
+      },
+      "teal": {
+        "400": "#22D3EE",
+        "500": "#06B6D4",
+        "600": "#0891B2"
+      },
+      "slate": {
+        "50": "#F8FAFC",
+        "100": "#F1F5F9",
+        "200": "#E2E8F0",
+        "300": "#CBD5E1",
+        "400": "#94A3B8",
+        "500": "#64748B",
+        "600": "#475569",
+        "700": "#334155",
+        "800": "#1E293B",
+        "900": "#0F172A"
+      },
+      "state": {
+        "success": "#10B981",
+        "warning": "#F59E0B",
+        "danger": "#EF4444",
+        "info": "#017CF5",
+        "critical": "#BE123C"
+      }
+    }
+  },
+  "font": {
+    "family": {
+      "sans": {
+        "value": "Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+      },
+      "mono": {
+        "value": "'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+      }
+    },
+    "weight": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "black": 800
+    },
+    "tracking": {
+      "display": "-0.015em",
+      "body": "0em",
+      "caps": "0.08em"
+    }
+  },
+  "radius": {
+    "sm": "6px",
+    "md": "10px",
+    "lg": "16px",
+    "xl": "24px",
+    "icon": "22.37%",
+    "pill": "999px"
+  },
+  "elevation": {
+    "1": "0 1px 2px rgba(2,9,28,.06), 0 1px 1px rgba(2,9,28,.04)",
+    "2": "0 4px 12px rgba(2,9,28,.08)",
+    "3": "0 12px 32px rgba(2,9,28,.12)"
+  },
+  "gradient": {
+    "brand": "linear-gradient(135deg,#017CF5 0%,#0148A8 100%)",
+    "network": "linear-gradient(135deg,#02091C 0%,#061532 55%,#0A2247 100%)"
+  }
+}

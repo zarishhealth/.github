@@ -1,0 +1,109 @@
+/* ZarishHealth brand tokens - v1.0.0
+   Drop-in CSS custom properties. Import before your own stylesheet. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  /* ---- core brand ---- */
+  --zh-primary: #017CF5;          /* Zarish Blue   */
+  --zh-primary-hover: #0163C4;
+  --zh-primary-active: #014A93;
+  --zh-accent: #10B981;           /* Vital Green   */
+  --zh-accent-alt: #06B6D4;       /* Care Teal     */
+  --zh-ink: #02091C;              /* Deep Navy     */
+  --zh-surface: #F5F7FA;
+  --zh-on-brand: #FFFFFF;
+
+  /* ---- full scale ---- */
+  --zh-blue-50: #E8F2FE;
+  --zh-blue-100: #CFE5FD;
+  --zh-blue-200: #9ECBFB;
+  --zh-blue-300: #6EB1F9;
+  --zh-blue-400: #3D97F7;
+  --zh-blue-500: #017CF5;
+  --zh-blue-600: #0163C4;
+  --zh-blue-700: #014A93;
+  --zh-blue-800: #003162;
+  --zh-blue-900: #001931;
+  --zh-navy-600: #1E3A63;
+  --zh-navy-700: #123055;
+  --zh-navy-800: #0A1A34;
+  --zh-navy-900: #02091C;
+  --zh-green-400: #34D399;
+  --zh-green-500: #10B981;
+  --zh-green-600: #059669;
+  --zh-teal-400: #22D3EE;
+  --zh-teal-500: #06B6D4;
+  --zh-teal-600: #0891B2;
+  --zh-slate-50: #F8FAFC;
+  --zh-slate-100: #F1F5F9;
+  --zh-slate-200: #E2E8F0;
+  --zh-slate-300: #CBD5E1;
+  --zh-slate-400: #94A3B8;
+  --zh-slate-500: #64748B;
+  --zh-slate-600: #475569;
+  --zh-slate-700: #334155;
+  --zh-slate-800: #1E293B;
+  --zh-slate-900: #0F172A;
+  --zh-state-success: #10B981;
+  --zh-state-warning: #F59E0B;
+  --zh-state-danger: #EF4444;
+  --zh-state-info: #017CF5;
+  --zh-state-critical: #BE123C;
+
+  /* ---- typography ---- */
+  --zh-font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --zh-font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --zh-tracking-display: -0.015em;
+  --zh-tracking-caps: 0.08em;
+
+  /* ---- radius / elevation ---- */
+  --zh-radius-sm: 6px;
+  --zh-radius-md: 10px;
+  --zh-radius-lg: 16px;
+  --zh-radius-xl: 24px;
+  --zh-radius-pill: 999px;
+  --zh-shadow-1: 0 1px 2px rgba(2,9,28,.06), 0 1px 1px rgba(2,9,28,.04);
+  --zh-shadow-2: 0 4px 12px rgba(2,9,28,.08);
+  --zh-shadow-3: 0 12px 32px rgba(2,9,28,.12);
+
+  /* ---- gradients ---- */
+  --zh-gradient-brand: linear-gradient(135deg,#017CF5 0%,#0148A8 100%);
+  --zh-gradient-network: linear-gradient(135deg,#02091C 0%,#061532 55%,#0A2247 100%);
+
+  /* ---- semantic (light) ---- */
+  --zh-bg: #FFFFFF;
+  --zh-bg-subtle: #F5F7FA;
+  --zh-text: #0F172A;
+  --zh-text-muted: #64748B;
+  --zh-border: #E2E8F0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --zh-bg: #02091C;
+    --zh-bg-subtle: #0A1A34;
+    --zh-text: #F1F5F9;
+    --zh-text-muted: #94A3B8;
+    --zh-border: #1E3A63;
+    --zh-primary: #3D97F7;        /* lifted for AA contrast on navy */
+  }
+}
+
+[data-theme="dark"] {
+  --zh-bg: #02091C;
+  --zh-bg-subtle: #0A1A34;
+  --zh-text: #F1F5F9;
+  --zh-text-muted: #94A3B8;
+  --zh-border: #1E3A63;
+  --zh-primary: #3D97F7;
+}
+
+body { font-family: var(--zh-font-sans); color: var(--zh-text); background: var(--zh-bg); }
+code, pre, .zh-mono { font-family: var(--zh-font-mono); }
+h1,h2,h3 { letter-spacing: var(--zh-tracking-display); font-weight: 800; }
+.zh-btn {
+  background: var(--zh-primary); color: #fff; border: 0;
+  border-radius: var(--zh-radius-md); padding: .625rem 1.125rem;
+  font: 600 .9375rem/1 var(--zh-font-sans); cursor: pointer;
+}
+.zh-btn:hover { background: var(--zh-primary-hover); }

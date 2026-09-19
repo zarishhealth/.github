@@ -1,0 +1,43 @@
+{
+  "name": "ZarishHealth",
+  "short_name": "ZarishHealth",
+  "description": "ZarishHealth",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#02091C",
+  "theme_color": "#017CF5",
+  "icons": [
+    {
+      "src": "/favicon/zarishhealth-favicon-web-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon/zarishhealth-favicon-web-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/app-icon/zarishhealth-appicon-maskable-android-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/app-icon/zarishhealth-appicon-maskable-android-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon/zarishhealth-favicon-web.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
