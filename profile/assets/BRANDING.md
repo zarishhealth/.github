@@ -450,7 +450,7 @@ https://raw.githubusercontent.com/<OWNER>/<REPO>/main/.github/profile/assets/<pa
 **Example**
 
 ```markdown
-<img src="https://raw.githubusercontent.com/zarishsphere/zarishhealth/main/.github/profile/assets/logo/zarishhealth-logo-horizontal-dark.svg" width="420">
+<img src="https://raw.githubusercontent.com/zarishhealth/.github/main/.github/profile/assets/logo/zarishhealth-logo-horizontal-dark.svg" width="420">
 ```
 
 **Notes that will save you an hour**
