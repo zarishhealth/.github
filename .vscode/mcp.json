@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json.schemastore.org/mcp.json",
+  "inputs": [
+    {
+      "id": "github_mcp_pat",
+      "type": "promptString",
+      "description": "ZarishHealth Fine-Grained GitHub Personal Access Token (PAT)",
+      "password": true
+    },
+    {
+      "id": "dynatrace_api_token",
+      "type": "promptString",
+      "description": "ZarishHealth Dynatrace Security API Token",
+      "password": true
+    }
+  ],
+  "servers": {
+    "github-remote": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer ${input:github_mcp_pat}"
+      },
+      "description": "Remote hosted GitHub MCP server for repository search, issues, pull requests, and Copilot actions."
+    },
+    "github-local-docker": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "-e",
+        "GITHUB_TOOLSETS=repos,issues,pull_requests,actions,code_security",
+        "-e",
+        "GITHUB_READ_ONLY=0",
+        "ghcr.io/github/github-mcp-server"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_mcp_pat}"
+      },
+      "description": "Local Docker container instance of GitHub MCP server for air-gapped or customized workspace tool execution."
+    },
+    "dynatrace-security-gateway": {
+      "type": "http",
+      "url": "https://zarishhealth.live.dynatrace.com/platform-reserved/mcp-gateway/v0.1/servers/dynatrace-mcp/mcp",
+      "headers": {
+        "Authorization": "Bearer ${input:dynatrace_api_token}"
+      },
+      "tools": [
+        "vulnerability_scan",
+        "remediation_advisor",
+        "runtime_security_audit"
+      ],
+      "description": "Dynatrace MCP Security Gateway for automated vulnerability scanning and HIPAA security policy compliance."
+    },
+    "arm-stdio-container": {
+      "type": "stdio",
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "--pull=always",
+        "-v",
+        "${workspaceFolder}:/workspace",
+        "armlimited/arm-mcp:latest"
+      ],
+      "description": "Local stdio containerized tool server for specialized compilation and binary analysis."
+    }
+  }
+}

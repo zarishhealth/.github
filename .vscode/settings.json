@@ -1,0 +1,28 @@
+{
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "yaml": true
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.chat.agent.enabled": true,
+  "github.copilot.chat.agent.defaultModel": "gpt-4o",
+  "github.copilot.chat.customInstructions.file": ".github/copilot-instructions.md",
+  "github.copilot.chat.mcp.enabled": true,
+  "github.copilot.chat.mcp.config": ".vscode/mcp.json",
+  "github.copilot.chat.codeReview.enabled": true,
+  "github.copilot.chat.welcomeMessage": "Welcome to ZarishHealth AI Automation Hub. All code edits must strictly observe HIPAA/PHI data masking guidelines defined in .github/copilot-instructions.md.",
+  "files.associations": {
+    "*.instructions.md": "markdown",
+    "*.agent.md": "markdown",
+    "AGENTS.md": "markdown"
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  }
+}
