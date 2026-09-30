@@ -111,7 +111,7 @@ Lowercase, hyphen-separated, no spaces, no underscores, no version numbers in fi
 
 ## 4. Directory map
 
-*Repository URL:* (https:github.com/zarishhealth/.github)
+*Repository URL:* <https://github.com/zarishhealth/.github>
 
 ```
 .github/profile/assets/

@@ -9,6 +9,12 @@ version: 1.0.0
 
 Machine-readable companion to `BRANDING.md`. Read this before producing any ZarishHealth-branded artefact. Full rationale and per-platform detail live in `BRANDING.md`; exact values live in `brand-tokens.json`.
 
+## Canonical identity references
+
+- Organization: **ZarishHealth** — <https://github.com/zarishhealth>
+- Shared organization profile and brand repository: <https://github.com/zarishhealth/.github>
+- Use “ZarishHealth” in prose and lowercase `zarishhealth` in handles, URLs, package names, and asset filenames.
+
 ## When to use
 
 Trigger on: ZarishHealth logo, icon, favicon, app icon, avatar, banner, OG/social card, README header, badge, colour, palette, font, brand review, "make it on-brand", or any asset destined for a ZarishHealth surface.
