@@ -14,19 +14,37 @@ permissions:
 
 jobs:
   mirror:
-    runs-on: ubuntu-latest
+    name: Mirror shared assets
+    runs-on: ubuntu-24.04
     steps:
+      - name: Check Pages repository token
+        id: token
+        env:
+          PAGES_REPO_TOKEN: ${{ secrets.PAGES_REPO_TOKEN }}
+        shell: bash
+        run: |
+          if [[ -n "$PAGES_REPO_TOKEN" ]]; then
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          else
+            echo 'PAGES_REPO_TOKEN is not available to this repository; mirror steps will be skipped.'
+            echo "available=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: Check out organization brand source
-        uses: actions/checkout@v4
+        if: steps.token.outputs.available == 'true'
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           path: source
+          persist-credentials: false
       - name: Check out Pages repository
-        uses: actions/checkout@v4
+        if: steps.token.outputs.available == 'true'
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: zarishhealth/zarishhealth.github.io
           token: ${{ secrets.PAGES_REPO_TOKEN }}
           path: pages
+          persist-credentials: true
       - name: Copy stable public assets
+        if: steps.token.outputs.available == 'true'
         run: |
           rm -rf pages/assets/brand
           mkdir -p pages/assets/brand
@@ -34,6 +52,7 @@ jobs:
           mkdir -p pages/.well-known
           cp source/.well-known/security.txt pages/.well-known/security.txt
       - name: Commit and push mirror
+        if: steps.token.outputs.available == 'true'
         working-directory: pages
         run: |
           git config user.name 'zarishhealth-bot'
