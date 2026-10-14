@@ -1,6 +1,6 @@
 # ZarishHealth — Asset Index
 
-**239 files · 9.56 MB.** Naming: `zarishhealth-<type>-<target>[-<variant>][-<WxH>].<ext>` — see [BRANDING.md](./BRANDING.md) §3.
+**237 files · 9.56 MB.** Naming: `zarishhealth-<type>-<target>[-<variant>][-<WxH>].<ext>` — see [BRANDING.md](./BRANDING.md) §3.
 
 ## Root — docs, tokens & web config  
 `9 files`
@@ -252,7 +252,7 @@
 | `banner/zarishhealth-banner-youtube-channel-2560x1440.svg` | 72.0 KB |
 
 ## `badge/` — README shields  
-`22 files`
+`20 files`
 
 | File | Size |
 | --- | ---: |
@@ -262,8 +262,6 @@
 | `badge/zarishhealth-badge-readme-certified.svg` | 22.7 KB |
 | `badge/zarishhealth-badge-readme-docs.png` | 7.9 KB |
 | `badge/zarishhealth-badge-readme-docs.svg` | 19.5 KB |
-| `badge/zarishhealth-badge-readme-fhir-r4.png` | 4.6 KB |
-| `badge/zarishhealth-badge-readme-fhir-r4.svg` | 9.4 KB |
 | `badge/zarishhealth-badge-readme-hipaa-ready.png` | 8.7 KB |
 | `badge/zarishhealth-badge-readme-hipaa-ready.svg` | 22.7 KB |
 | `badge/zarishhealth-badge-readme-license-mit.png` | 4.0 KB |

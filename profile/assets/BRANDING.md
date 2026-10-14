@@ -4,7 +4,7 @@
 
 # ZarishHealth — Brand Guidelines
 
-**Version 1.0.0** · 234 files · SVG + PNG + ICO · MIT-licensed assets
+**Version 1.0.0** · 237 files · SVG + PNG + ICO · MIT-licensed assets
 
 </div>
 
@@ -422,12 +422,11 @@ Eleven drop-in shields in `badge/` (SVG and 3× PNG), sized and styled to sit ne
 ```markdown
 ![powered by ZarishHealth](./.github/profile/assets/badge/zarishhealth-badge-readme-powered-by.svg)
 ![status](./.github/profile/assets/badge/zarishhealth-badge-readme-status-live.svg)
-![FHIR R4](./.github/profile/assets/badge/zarishhealth-badge-readme-fhir-r4.svg)
 ```
 
-Available: `powered-by`, `built-with`, `part-of`, `certified`, `status-live`, `license-mit`, `docs`, `version`, `fhir-r4`, `hipaa-ready`, `open-source`.
+Available: `powered-by`, `built-with`, `part-of`, `certified`, `status-live`, `license-mit`, `docs`, `version`, `hipaa-ready`, `open-source`.
 
-> `hipaa-ready`, `fhir-r4` and `certified` are **visual badges, not attestations.** Only display them where the underlying claim is actually true for your deployment.
+> `hipaa-ready` and `certified` are **visual badges, not attestations.** Only display them where the underlying claim is actually true for your deployment.
 
 You can also drive shields.io with brand colours:
 
@@ -444,18 +443,18 @@ Once the folder is committed to `.github/profile/assets/`, every file is live an
 **Pattern**
 
 ```
-https://raw.githubusercontent.com/<OWNER>/<REPO>/main/.github/profile/assets/<path>
+https://zarishhealth.github.io/assets/brand/<path>
 ```
 
 **Example**
 
 ```markdown
-<img src="https://raw.githubusercontent.com/zarishhealth/.github/main/.github/profile/assets/logo/zarishhealth-logo-horizontal-dark.svg" width="420">
+<img src="https://zarishhealth.github.io/assets/brand/logo/zarishhealth-logo-horizontal-dark.svg" width="420">
 ```
 
 **Notes that will save you an hour**
 
-- `raw.githubusercontent.com` serves SVG as `text/plain`, so it renders in `<img>` tags in Markdown but **not** as a live stylesheet. For SVG embedded in HTML pages, serve it from your own domain or GitHub Pages.
+- GitHub raw URLs are suitable for source-oriented links, but SVG used by a web page should be served from the Pages asset mirror so the response has the correct web content type.
 - GitHub proxies README images through Camo and caches them. After replacing a file, the old version can persist for minutes — append `?v=2` to bust it.
 - **Use a branch name (`main`), never a commit SHA**, if you want the URL to stay current automatically. Use a tag (`v1.0.0`) if you want it frozen.
 - GitHub Pages (`https://<owner>.github.io/<repo>/…`) serves correct MIME types and is the better host for favicons and manifests.

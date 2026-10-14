@@ -1,0 +1,43 @@
+name: Mirror brand assets to Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'profile/assets/**'
+      - '.well-known/security.txt'
+      - '.github/workflows/sync-brand-to-pages.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out organization brand source
+        uses: actions/checkout@v4
+        with:
+          path: source
+      - name: Check out Pages repository
+        uses: actions/checkout@v4
+        with:
+          repository: zarishhealth/zarishhealth.github.io
+          token: ${{ secrets.PAGES_REPO_TOKEN }}
+          path: pages
+      - name: Copy stable public assets
+        run: |
+          rm -rf pages/assets/brand
+          mkdir -p pages/assets/brand
+          cp -R source/profile/assets/. pages/assets/brand/
+          mkdir -p pages/.well-known
+          cp source/.well-known/security.txt pages/.well-known/security.txt
+      - name: Commit and push mirror
+        working-directory: pages
+        run: |
+          git config user.name 'zarishhealth-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/brand .well-known/security.txt
+          git diff --cached --quiet || git commit -m 'chore(brand): sync shared assets from .github'
+          git push

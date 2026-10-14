@@ -2,7 +2,6 @@
   ZarishHealth — GitHub organization profile
   Repo:  https://github.com/zarishhealth/.github   →   profile/README.md
 
-  IMAGE PATHS: absolute raw.githubusercontent.com URLs are used deliberately.
   Relative paths (./assets/...) are unreliable on the rendered *organization
   profile page* — they resolve correctly inside the repo but not always on the
   org landing page. Absolute raw URLs work in both places.
@@ -17,9 +16,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/banner/zarishhealth-banner-github-readme-wide-2560x640.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/banner/zarishhealth-banner-github-readme-light-1280x320.png">
-  <img src="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/banner/zarishhealth-banner-github-readme-1280x320.png" alt="ZarishHealth" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://zarishhealth.github.io/assets/brand/banner/zarishhealth-banner-github-readme-wide-2560x640.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://zarishhealth.github.io/assets/brand/banner/zarishhealth-banner-github-readme-light-1280x320.png">
+  <img src="https://zarishhealth.github.io/assets/brand/banner/zarishhealth-banner-github-readme-1280x320.png" alt="ZarishHealth" width="100%">
 </picture>
 
 <br><br>
@@ -31,8 +30,8 @@
 <br>
 
 [![Website](https://img.shields.io/badge/website-zarishhealth.github.io-017CF5?style=for-the-badge&labelColor=02091C)](https://zarishhealth.github.io/)
-[![Offline First](https://img.shields.io/badge/offline-first-10B981?style=for-the-badge&labelColor=02091C)](#-why-zarishhealth)
-[![Self Hosted](https://img.shields.io/badge/self-hosted-06B6D4?style=for-the-badge&labelColor=02091C)](#-why-zarishhealth)
+[![Offline First](https://img.shields.io/badge/offline-first-10B981?style=for-the-badge&labelColor=02091C)](#-what-it-does)
+[![Self Hosted](https://img.shields.io/badge/self-hosted-06B6D4?style=for-the-badge&labelColor=02091C)](#-what-it-does)
 [![License](https://img.shields.io/badge/license-MIT-017CF5?style=for-the-badge&labelColor=02091C)](#-licence)
 
 <br>
@@ -259,7 +258,7 @@ Especially valuable:
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/reference/zarishhealth-reference-brand-overview.png" alt="ZarishHealth brand overview" width="640">
+<img src="https://zarishhealth.github.io/assets/brand/reference/zarishhealth-reference-brand-overview.png" alt="ZarishHealth brand overview" width="640">
 
 </div>
 
@@ -278,11 +277,11 @@ The complete identity system lives in [`profile/assets/`](https://github.com/zar
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/badge/zarishhealth-badge-readme-powered-by.svg" alt="powered by ZarishHealth" height="22">
+<img src="https://zarishhealth.github.io/assets/brand/badge/zarishhealth-badge-readme-powered-by.svg" alt="powered by ZarishHealth" height="22">
 &nbsp;
-<img src="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/badge/zarishhealth-badge-readme-built-with.svg" alt="built with ZarishHealth" height="22">
+<img src="https://zarishhealth.github.io/assets/brand/badge/zarishhealth-badge-readme-built-with.svg" alt="built with ZarishHealth" height="22">
 &nbsp;
-<img src="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/badge/zarishhealth-badge-readme-open-source.svg" alt="open source" height="22">
+<img src="https://zarishhealth.github.io/assets/brand/badge/zarishhealth-badge-readme-open-source.svg" alt="open source" height="22">
 
 </div>
 
@@ -292,11 +291,11 @@ The complete identity system lives in [`profile/assets/`](https://github.com/zar
 <br>
 
 ```markdown
-![powered by ZarishHealth](https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/badge/zarishhealth-badge-readme-powered-by.svg)
+![powered by ZarishHealth](https://zarishhealth.github.io/assets/brand/badge/zarishhealth-badge-readme-powered-by.svg)
 ```
 
 ```html
-<img src="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/logo/zarishhealth-logo-horizontal-dark.svg" alt="ZarishHealth" width="420">
+<img src="https://zarishhealth.github.io/assets/brand/logo/zarishhealth-logo-horizontal-dark.svg" alt="ZarishHealth" width="420">
 ```
 
 Colours: Zarish Blue `#017CF5` · Vital Green `#10B981` · Deep Navy `#02091C`
@@ -319,7 +318,7 @@ The ZarishHealth name and mark identify the project. Use them to *refer* to Zari
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/icon/zarishhealth-icon-transparent-color.svg" alt="" width="46">
+<img src="https://zarishhealth.github.io/assets/brand/icon/zarishhealth-icon-transparent-color.svg" alt="" width="46">
 
 <br><br>
 

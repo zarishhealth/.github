@@ -160,7 +160,7 @@ Masters: `icon/zarishhealth-icon-transparent-color.svg`, `app-icon/zarishhealth-
 ## Known placeholders
 
 - The tagline **"Open health infrastructure"** on `social/` cards is a stand-in. Ask before shipping it; the `banner/` files carry no tagline.
-- `badge/*-hipaa-ready`, `*-fhir-r4` and `*-certified` are visual badges only. Do not present them as attestations unless the claim is independently true.
+- `badge/*-hipaa-ready`, `*-fhir-r5` and `*-certified` are visual badges only. Do not present them as attestations unless the claim is independently true.
 
 ## Review checklist
 

@@ -1,0 +1,19 @@
+name: REUSE compliance
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  reuse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install REUSE
+        run: python3 -m pip install --user reuse
+      - name: Check licensing metadata
+        run: ~/.local/bin/reuse lint

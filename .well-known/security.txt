@@ -1,0 +1,5 @@
+Contact: https://github.com/zarishhealth/.github/security/advisories/new
+Expires: 2027-10-14T00:00:00.000Z
+Preferred-Languages: en, bn
+Canonical: https://zarishhealth.github.io/.well-known/security.txt
+Policy: https://github.com/zarishhealth/.github/blob/main/SECURITY.md
