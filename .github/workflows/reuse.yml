@@ -10,10 +10,13 @@ permissions:
 
 jobs:
   reuse:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
       - name: Install REUSE
-        run: python3 -m pip install --user reuse
+        run: python3 -m pip install --user reuse==6.2.0
       - name: Check licensing metadata
         run: ~/.local/bin/reuse lint
