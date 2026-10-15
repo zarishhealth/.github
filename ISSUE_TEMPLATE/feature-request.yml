@@ -1,0 +1,25 @@
+name: "Feature request"
+about: "Suggest an improvement or new feature"
+title: "[feat] "
+labels: ["type:feature", "priority: p3"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for the idea. Describe the feature, the problem it solves, and any alternatives.
+  - type: input
+    id: summary
+    attributes:
+      label: Short summary
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Detailed proposal
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Benefits / Use cases
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered

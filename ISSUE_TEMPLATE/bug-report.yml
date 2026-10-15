@@ -1,0 +1,32 @@
+name: "Bug report"
+about: "Create a report to help us improve"
+title: "[bug] "
+labels: ["type:bug", "priority: p2"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a bug report. Provide as much context as you can.
+  - type: input
+    id: environment
+    attributes:
+      label: Environment (OS, Rust/Node version, browser)
+      description: e.g., Ubuntu 22.04, rust 1.72
+      placeholder: "Ubuntu 22.04, rust 1.72"
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Step-by-step instructions to reproduce the bug
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs / stack traces

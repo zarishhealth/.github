@@ -1,0 +1,9 @@
+{
+  "name": "Rust CI",
+  "description": "Repository template for Rust CI using the org reusable-rust-ci workflow.",
+  "inputs": {},
+  "branding": {
+    "color": "blue",
+    "icon": "rust"
+  }
+}

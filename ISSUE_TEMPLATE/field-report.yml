@@ -1,0 +1,26 @@
+name: "Field report"
+about: "Report from a site / field deployment (synthetic data only unless otherwise authorized)"
+title: "[field-report] "
+labels: ["type:field-report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Field reports must never include PHI unless properly authorized and stored in a designated private repository.
+  - type: input
+    id: site_id
+    attributes:
+      label: Site ID
+      description: e.g., site-bd-coxs-bazar-01
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary of the issue/observation
+  - type: textarea
+    id: actions
+    attributes:
+      label: Actions taken
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Attachments (provide links to site distro or ticket)

@@ -28,3 +28,5 @@ Follow `profile/assets/SKILL.md` and `profile/assets/BRANDING.md` for branded ma
 ## Engineering and review
 
 For implementation work, follow the target repository's current instructions, architecture, dependency constraints, and tests. Do not assume paths, frameworks, workflows, services, limits, or MCP integrations from another repository. Make the smallest scoped change, add or update tests where appropriate, and report validation accurately. Prefer pinned, reviewed dependencies and least-privilege credentials for automation; never invent credentials or provider capabilities.
+
+

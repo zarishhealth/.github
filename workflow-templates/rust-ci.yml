@@ -1,0 +1,11 @@
+name: "Rust CI (template)"
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    types: [opened, synchronize, reopened]
+jobs:
+  call-reusable-rust-ci:
+    uses: zarishhealth/.github/.github/workflows/reusable-rust-ci.yml@main
+    with:
+      workdir: "."

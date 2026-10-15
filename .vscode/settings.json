@@ -1,0 +1,11 @@
+{
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.wordWrap": "on",
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "emmet.triggerExpansionOnTab": true,
+  "html.format.enable": true
+}
