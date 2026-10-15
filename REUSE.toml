@@ -1,12 +1,19 @@
 version = 1
 
 [[annotations]]
-path = ["*.yml", "*.yaml", ".github/**", ".well-known/**"]
+path = [
+  "**/*.yml",
+  "**/*.yaml",
+  "*.json",
+  "*.toml",
+  ".well-known/**",
+  "ISSUE_TEMPLATE/**",
+]
 SPDX-FileCopyrightText = "2026 ZarishHealth"
 SPDX-License-Identifier = "Apache-2.0"
 
 [[annotations]]
-path = ["*.md", "BLUEPRINT.md", "profile/README.md", "profile/assets/*.md", "profile/assets/*.html", "profile/assets/*.json", "profile/assets/*.css", "profile/assets/*.xml", "LICENSES/CC-BY-4.0.txt"]
+path = ["*.md", "profile/README.md", "LICENSES/CC-BY-4.0.txt"]
 SPDX-FileCopyrightText = "2026 ZarishHealth"
 SPDX-License-Identifier = "CC-BY-4.0"
 

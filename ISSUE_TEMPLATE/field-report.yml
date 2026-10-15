@@ -1,26 +1,29 @@
 name: "Field report"
-about: "Report from a site / field deployment (synthetic data only unless otherwise authorized)"
+about: "Share a deployment observation using synthetic, non-identifying details"
 title: "[field-report] "
-labels: ["type:field-report"]
 body:
   - type: markdown
     attributes:
       value: |
-        Field reports must never include PHI unless properly authorized and stored in a designated private repository.
+        This is a public issue. Never include patient or personal information,
+        real site identifiers, private ticket links, credentials, or production
+        logs. Use synthetic examples and general, non-identifying descriptions.
   - type: input
-    id: site_id
+    id: environment
     attributes:
-      label: Site ID
-      description: e.g., site-bd-coxs-bazar-01
+      label: General environment (optional)
+      description: Use broad details only; do not identify a person, facility, or site.
+      placeholder: "Rural clinic, limited connectivity"
   - type: textarea
     id: summary
     attributes:
-      label: Summary of the issue/observation
+      label: Summary of the observation (synthetic details only)
   - type: textarea
     id: actions
     attributes:
       label: Actions taken
-  - type: textarea
-    id: attachments
+  - type: input
+    id: versions
     attributes:
-      label: Attachments (provide links to site distro or ticket)
+      label: Relevant software versions
+      description: Do not include private links, identifiers, or sensitive logs.

@@ -1,11 +1,10 @@
-```markdown
 # Contributing to ZarishHealth
 
-Follow these rules:
-- All commits must follow Conventional Commits.
-- Create feature branches using the naming rules: feat/, fix/, docs/, chore/, test/
-- Open PRs against `main` and request review from the relevant CODEOWNERS.
-- Do not commit secrets. Use environment secrets or your site provisioning mechanism for secrets.
-- Run pre-commit hooks locally (rustfmt, clippy, git-secrets).
+This repository intentionally has no GitHub Actions workflows, so GitHub will
+not automatically build, test, or check a pull request here. Review your
+changes locally before publishing them.
 
-See repository-specific README for additional guidance.
+Do not add credentials, patient information, identifiable site details, or
+unredacted production logs. Use synthetic examples only. Other ZarishHealth
+repositories may have their own contribution steps; follow the instructions in
+the repository you are changing.

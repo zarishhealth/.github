@@ -1,24 +1,25 @@
-<!--
-  ZarishHealth — GitHub organization profile
-  Repo:  https://github.com/zarishhealth/.github   →   profile/README.md
-
-  Relative paths (./assets/...) are unreliable on the rendered *organization
-  profile page* — they resolve correctly inside the repo but not always on the
-  org landing page. Absolute raw URLs work in both places.
-
-  If you rename the default branch from `main`, find-and-replace `/main/` below.
-  After replacing an image file, GitHub's Camo cache can serve the old one for a
-  few minutes — append ?v=2 to bust it.
-
-  Placeholders to fill in are marked  <!-- TODO -->
-
-
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://zarishhealth.github.io/assets/brand/banner/zarishhealth-banner-github-readme-wide-2560x640.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://zarishhealth.github.io/assets/brand/banner/zarishhealth-banner-github-readme-light-1280x320.png">
-  <img src="https://zarishhealth.github.io/assets/brand/banner/zarishhealth-banner-github-readme-1280x320.png" alt="ZarishHealth" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/banner/zarishhealth-banner-github-readme-wide-2560x640.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/banner/zarishhealth-banner-github-readme-light-1280x320.png">
+  <img src="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/banner/zarishhealth-banner-github-readme-1280x320.png" alt="ZarishHealth" width="100%">
 </picture>
 
+# ZarishHealth
+
 </div>
+
+ZarishHealth is an offline-first, self-hosted, vendor-independent Health
+Information System for low-resource settings and clinical facilities.
+
+## Explore
+
+- [Organization repositories](https://github.com/orgs/zarishhealth/repositories)
+- [Community guidelines](https://github.com/zarishhealth/.github/blob/main/CODE_OF_CONDUCT.md)
+- [Contributing guide](https://github.com/zarishhealth/.github/blob/main/CONTRIBUTING.md)
+- [Security policy](https://github.com/zarishhealth/.github/blob/main/SECURITY.md)
+- [Brand kit and usage guide](https://github.com/zarishhealth/.github/tree/main/profile/assets)
+
+Please do not post patient information, credentials, or identifiable site
+details in public issues, discussions, or pull requests. Use synthetic examples.
