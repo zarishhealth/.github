@@ -438,26 +438,26 @@ You can also drive shields.io with brand colours:
 
 ## 16. Hot-linking from GitHub (real-time URLs)
 
-Once the folder is committed to `.github/profile/assets/`, every file is live and always current.
+The kit is stored once, here in `.github/profile/assets/`, and every consumer hot-links it. There
+is no second copy and no Pages mirror to keep in sync.
 
 **Pattern**
 
 ```
-https://zarishhealth.github.io/assets/brand/<path>
+https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/<path>
 ```
 
 **Example**
 
 ```markdown
-<img src="https://zarishhealth.github.io/assets/brand/logo/zarishhealth-logo-horizontal-dark.svg" width="420">
+<img src="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/logo/zarishhealth-logo-horizontal-dark.svg" width="420">
 ```
 
 **Notes that will save you an hour**
 
-- GitHub raw URLs are suitable for source-oriented links, but SVG used by a web page should be served from the Pages asset mirror so the response has the correct web content type.
+- Raw GitHub URLs serve every image. A site that needs an origin-bound file (a web app manifest, `browserconfig.xml`) copies just those files from the kit into its own static tree; `docs/static/img/` is the worked example.
 - GitHub proxies README images through Camo and caches them. After replacing a file, the old version can persist for minutes — append `?v=2` to bust it.
 - **Use a branch name (`main`), never a commit SHA**, if you want the URL to stay current automatically. Use a tag (`v1.0.0`) if you want it frozen.
-- GitHub Pages (`https://<owner>.github.io/<repo>/…`) serves correct MIME types and is the better host for favicons and manifests.
 - Theme-aware README images:
 
 ```markdown
