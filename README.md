@@ -7,7 +7,7 @@ community-health files, issue forms, and shared brand kit.
 - Community guidelines: [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)
 - Contributing: [`CONTRIBUTING.md`](CONTRIBUTING.md)
 - Security policy: [`SECURITY.md`](SECURITY.md)
-- Brand kit: [`profile/assets/BRANDING.md`](profile/assets/BRANDING.md)
+- Brand kit: [`brand-kit`](https://github.com/zarishhealth/brand-kit) (private; published at <https://zarishhealth.github.io/assets/brand/>)
 
 ## No workflow automation
 

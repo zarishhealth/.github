@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/banner/zarishhealth-banner-github-readme-wide-2560x640.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/banner/zarishhealth-banner-github-readme-light-1280x320.png">
-  <img src="https://raw.githubusercontent.com/zarishhealth/.github/main/profile/assets/banner/zarishhealth-banner-github-readme-1280x320.png" alt="ZarishHealth" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://zarishhealth.github.io/assets/brand/banner/zarishhealth-banner-github-readme-wide-2560x640.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://zarishhealth.github.io/assets/brand/banner/zarishhealth-banner-github-readme-light-1280x320.png">
+  <img src="https://zarishhealth.github.io/assets/brand/banner/zarishhealth-banner-github-readme-1280x320.png" alt="ZarishHealth" width="100%">
 </picture>
 
 # ZarishHealth
