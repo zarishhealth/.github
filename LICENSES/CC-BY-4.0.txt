@@ -1,7 +1,7 @@
 zarishhealth Documentation — Creative Commons Attribution 4.0 International grant
 ======================================================================
 Copyright (c) 2026 zarishhealth
-Maintained by Mohammad Ariful ISLAM <code.and.brain@gmail.com>
+Maintained by ZarishHealth
 
 The documentation, prompts, templates, and brand-guidance content in this
 repository are additionally licensed under the Creative Commons
