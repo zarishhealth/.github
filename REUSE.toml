@@ -16,8 +16,3 @@ SPDX-License-Identifier = "Apache-2.0"
 path = ["*.md", "profile/README.md", "LICENSES/CC-BY-4.0.txt"]
 SPDX-FileCopyrightText = "2026 ZarishHealth"
 SPDX-License-Identifier = "CC-BY-4.0"
-
-[[annotations]]
-path = ["profile/assets/**"]
-SPDX-FileCopyrightText = "2026 ZarishHealth"
-SPDX-License-Identifier = "MIT"
